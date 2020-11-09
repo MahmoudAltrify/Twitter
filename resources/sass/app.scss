@@ -1,0 +1,209 @@
+@import "~bootstrap/scss/bootstrap";
+*{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+//Start Welcome page CSS
+.page {
+    height: 95vh;
+
+    .left-section {
+        background-color: rgb(113, 201, 248);
+        z-index: 0;
+        .bird-bg {
+            top: -30vh;
+            right: -50vh;
+            z-index: -1;
+            position: absolute;
+            color: rgb(29, 161, 242);
+            fill: currentColor;
+            //clip-path: polygon(0 0, 67.1% 0, 67.2% 81.6%, 0 81.6%);
+        }
+        @media (max-width: 576px) {
+            .bird-bg{
+                display: none;
+            }
+        }
+        .about {
+            .svg-icon {
+                width: 30px;
+                height: 30px;
+                fill: white;
+            }
+
+            .about-text {
+                color: white;
+                font-size: 23px;
+                line-height: 30px;
+                font-weight: bold;
+                //  margin-left: 15px;
+            }
+        }
+    }
+
+    .right-section {
+        position: relative;
+        .container-edit {
+            .svg-icon {
+                width: 40px;
+                height: 40px;
+                color: rgb(29, 161, 242);
+                fill: currentColor;
+                font-size: 16px;
+                line-height: 2.75rem;
+            }
+            .h3-right-section {
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 1.3125;
+            }
+            .p-right-section {
+                font-weight: 700;
+                font-size: 15px;
+            }
+            .btn {
+                border-radius: 100px;
+                cursor: pointer;
+            }
+            .custom-btn {
+                background-color: white;
+                border-color: #1da1f2;
+                color: #1da1f2;
+            }
+        }
+    }
+
+    .modal-content{
+        height: 80vh;
+        border-radius: 40px;
+        .modal-body{
+            .signup-body {
+                .centered-signup {
+                    border-radius: 38px;
+                    background-color: white;
+                    .svg-icon {
+                        height: 39px;
+                        color: rgb(29, 161, 242);
+                        fill: currentColor;
+                        font-size: 16px;
+                        line-height: 2.75rem;
+                        margin: 10px 0 10px 0;
+                    }
+                    .h1-signup {
+                        span {
+                            margin: 40px 0 20px 8px;
+                            font-size: 20px;
+                            font-weight: bold;
+                            line-height: 30.1833px;
+                        }
+                    }
+                    .signup-form {
+                        display: flex;
+                        flex-direction: column;
+                        margin: auto;
+
+                        .form {
+                            border: none;
+                            border-bottom: 1px solid rgb(29, 161, 242);
+                            outline-style: none;
+                            padding: 10px 15px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .span-edit{
+                        opacity: 0.7%;
+                    }
+                    .cus-btn {
+                        margin-top: 10px;
+                        border: none;
+                        background-color: white;
+                        color: #1da1f2;
+                        outline-style: none;
+                    }
+
+                    .cus-btn:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+//End-of Welcome page CSS
+//Start-of Login page CSS
+.login-page{
+    .svg-icon{
+        height: 39px;
+        color: rgb(29, 161, 242);
+        fill:currentColor;
+        font-size: 16px;
+        line-height: 2.75rem;
+    }
+    .h1-login{
+        span{
+            font-size: 20px;
+            font-weight:bold;
+            line-height: 30.1833px;
+        }
+    }
+    .login-form{
+
+        .form{width: 37.5rem;
+            border:none;
+            border-bottom: 1px solid rgb(29, 161, 242);
+            outline-style: none;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 576px) { .form { width: 100%} }
+        .btn{
+            border-radius: 100px;
+            cursor: pointer;
+            opacity: 0.5;
+            margin-top: 4px;
+            background-color: rgb(29, 161, 242);
+            color:white;
+        }
+    }
+    .form-footer{
+        .forget-password:after{
+            content: "·";
+            color:rgb(29, 161, 242);
+        }
+    }
+}
+//End-of login page CSS
+//Start-of forgetPassword page CSS
+.Forgetpass-page{
+    .nav-bar{
+        box-shadow: 0 0 3px #aaa;
+        color:#66757f;
+        height: 3rem;
+        .container-edit{
+            max-width: 590px;
+            position: relative;
+            top: 1px;
+            .left-div{
+                .svg-icon{
+                    height: 30px;
+                    width: 30px;
+                    color: rgb(29, 161, 242);
+                    fill: currentColor;
+                }
+            }
+        }
+    }
+
+    .page-body{
+        max-width: 590px;
+    }
+    .form-body{
+        .form-control{
+            border-radius: 50px;
+        }
+        .btn{
+            border-radius: 50px;
+        }
+    }
+}
+
+//End-of forgetPassword page CSS
